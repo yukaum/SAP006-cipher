@@ -297,6 +297,7 @@ Ferramentas:
 
 * GitHub y GitHub Pages.
 * [Terminal](https://www.loom.com/share/29a6cf0f3c5245bf995738284b706468)
+* [Git config](https://www.loom.com/share/c7d445872b9f4618a24605fdcb26a48d)
 
 Organização do trabalho:
 
