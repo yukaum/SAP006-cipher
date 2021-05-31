@@ -182,8 +182,8 @@ também conhecido como vanilla JavaScript.
 
 Você não deve usar a _pseudo-variable_ `this`.
 
-Os testes unitários devem cubrir no mínimo de 70% dos _statements_, _functions_
-e _lines_, e um mínimo de 50% de _branches_. O _boilerplate_ já contem o setup e
+Os testes unitários devem cobrir no mínimo de 70% dos _statements_, _functions_
+e _lines_, e um mínimo de 50% de _branches_. O _boilerplate_ já contém o setup e
 configurações necessárias para executar os testes assim como _code coverage_
 para ver o nível de cobertura dos testes usando o comando `npm test`.
 
@@ -246,9 +246,7 @@ Nas regras/guias de estilo usaremos das recomendações padrão tanto para o
    Subsystem for
    Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 3. Faça seu próprio :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) do repositório. Seus
-   _mentores_ compartilharão com você um _link_ para um repositório privado e te
-   darão acesso a este repositório.
+   [fork](https://help.github.com/articles/fork-a-repo/) do repositório.
 4. :arrow_down: [Clone](https://help.github.com/articles/cloning-a-repository/)
    o _fork_ para seu computador (cópia local).
 5. 📦 Instale as dependências do projeto rodando o comando `npm install`. Mas
@@ -295,7 +293,7 @@ Desenvolvimento Front-end:
 
 Ferramentas:
 
-* GitHub y GitHub Pages.
+* GitHub e GitHub Pages.
 * [Terminal](https://www.loom.com/share/29a6cf0f3c5245bf995738284b706468)
 * [Git config](https://www.loom.com/share/c7d445872b9f4618a24605fdcb26a48d)
 
