@@ -10,31 +10,53 @@
     <h1>Hello world!</h1>
   </div>
 
-  <section class="offsetBox">
-    <label>Escolha seu <i>offset</i>:</label><br> 
-    <input type="range" id="slider" 
-    min="1" max="25" class="slider" value="13" name="slider" 
-    oninput="offset.value=slider.value">
-    <output for="slider" id="offset">13</output>
-  </section>
-
-  <section class="textInput">
+  <form id="myForm" class="textBox">
     <div class="cipher">
       <h2>CrIPTOgRAFAr</h2>
-      <textarea class="textarea" placeholder="Escreva seu texto aqui"></textarea> <br>
-      <input type="submit" id="submitOne" name="submitOne" value="Submit" class="submit" >
+    
+      <textarea id="string-input" class="textarea" placeholder="Escreva seu texto aqui"
+     autofocus="" spellcheck="false"></textarea>
+    
+      <label for="slider">Escolha seu <i>offset</i>:</label><br> 
+      <input type="range" id="slider" min="1" max="25" class="slider" value="13" 
+          name="slider" oninput="rot.value=slider.value">
+      <output for="slider" id="rot">13</output>
+    
+    
+      <button type="button" class="submit" id="submitToCipher">Submit</button>
+     
+      <label for="code">"Veja sua mensagem codificada:"</label>
+      <textarea id="code" class="textarea" readonly></textarea>
+    </div>   
+
+    <div class="decipher">
+      <h2>dESCRIPtOGRAFaR</h2>
+      <textarea id="decipher" class="textarea" placeholder="Escreva seu texto aqui" 
+      spellcheck="false"></textarea> <br>
+      
+      <button type="button" class= "submit" id="submitDecipher">Submit</button>
+
+      <label for="message">Veja sua mensagem descodificada:</label>
+      <textarea id="message" class="textarea" readonly></textarea>
+
     </div>
 
-    <div class="decipher"> 
-    <h2>dESCRIPtOGRAFaR</h2>
-    <textarea class="textarea" placeholder="Escreva seu texto aqui"></textarea> <br>
-    <input type="submit" id="submitOne" name="submitOne" value="Submit" class="submit">
-    </div>
-  </section>
+    <input type="button" class="submit" id="clean" value="Limpar">
+    
 
-  
+  </form>
+
+
+
+
+
 
 
   <script src="index.js" type="module"></script>
 </body>
 </html>
+
+
+
+
+

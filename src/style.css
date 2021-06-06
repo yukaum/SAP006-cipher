@@ -25,14 +25,6 @@ label{
     opacity:1;
 }
 
-.bubble{
-    background: #b8640b;
-    color: #000;
-    position: absolute;
-    border-radius: 3px;
-    padding: auto;
-}
-
 .textarea{
     height: 150px;
     border-radius: 5px;
@@ -40,18 +32,20 @@ label{
     width: 100%;
 }
 
-.textInput{
+.textBox{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #b8640b;
 }
+
 .submit:hover{
     cursor: pointer;
-    background-color: #6dbfa2;
+    background-color: black;
 }
 
 .submit{
-    display: flex;
+    display: block;
     border-radius: 5px;
     background-color: #bf6d8a; 
     border: none;
@@ -61,10 +55,7 @@ label{
     margin: 1rem auto;
     width: 25%;
     padding: 0.8rem;
-}
-
-.textInput{
-    background-color: #b8640b;
+    text-align: center;
 }
 
 .cipher{
