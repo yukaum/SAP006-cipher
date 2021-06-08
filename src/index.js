@@ -2,43 +2,26 @@ import cipher from './cipher.js';
 
 console.log(cipher);
 
-const toCipher = document.getElementById("string-input");
+const input = document.getElementById("string-input");
 const offset = document.getElementById("rot");
-const outputCode = document.getElementById("code");
+const outputMessage = document.getElementById("message");
 
-
-
-toCipher.onkeyup = function() {upperCipher()};
+input.onkeyup = function() {upperCipher()};
 function upperCipher() {
-  toCipher.value = toCipher.value.toUpperCase();
-  return toCipher.value;
+  input.value = input.value.toUpperCase();
+  return input.value;
 }
 
 document.getElementById("submitToCipher").addEventListener("click", startCipher);
 function  startCipher() {
-  return outputCode.innerHTML = cipher.encode(parseInt(offset.value), toCipher.value);
-}
-
-const decipher = document.getElementById("decipher");
-const outputMessage = document.getElementById("message");
-
-decipher.onkeyup = function() {upperDecipher()};
-function upperDecipher() {
-  decipher.value = decipher.value.toUpperCase();
-  return decipher.value;
-}
+  return outputMessage.innerHTML = cipher.encode(parseInt(offset.value), input.value);
+}  
+  
 
 document.getElementById("submitDecipher").addEventListener("click", startDecipher);
 function  startDecipher() {
-   return outputMessage.innerHTML = cipher.decode(parseInt(offset.value), decipher.value);
-  }
-  
-
-
-document.getElementById("clean").addEventListener("click", clean);
-function clean(){
-  document.getElementById("myForm").reset();
-  document.getElementById("code").innerHTML = "";
-  document.getElementById("message").innerHTML = "";
-  
+  return outputMessage.innerHTML = cipher.decode(parseInt(offset.value), input.value);
 }
+  
+
+ 

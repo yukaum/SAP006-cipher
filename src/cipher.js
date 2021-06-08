@@ -2,6 +2,13 @@ const cipher = {
   
   encode:
     function (offset, string){
+      if (typeof offset !== "number"){
+        throw new TypeError("O valor de offset não é um 'number'");
+      } 
+      if (typeof string !== "string"){
+        throw new TypeError("O valor do texto não é uma 'string'");
+      } 
+      
       let code = "";
       let i;
       for (i=0; i < string.length; i++){
@@ -19,6 +26,13 @@ const cipher = {
 
   decode:
     function (offset, string){
+      if (typeof offset !== "number"){
+        throw new TypeError("O valor de offset não é um 'number'");
+      } 
+      if (typeof string !== "string"){
+        throw new TypeError("O valor do texto não é uma 'string'");
+      } 
+      
       let decode = "";
       let i;
       for (i=0; i < string.length; i++){
