@@ -8,29 +8,48 @@
 <body>
   <form id="myForm" class="myForm">
     <h1>NEWSSAFE</h1>
-    <div class="inputOutput">
-      <textarea id="string-input" class="textarea" placeholder="Escreva seu texto aqui"
-      autofocus="" spellcheck="false"></textarea>
-    </div> 
-     
-    <div class="offsetBox">
-      <label for="slider" id="sliderLabel">Escolha seu <i>offset</i>:</label><br> 
-      <input type="range" id="slider" min="1" max="25" class="slider" value="13" 
-       name="slider" oninput="rot.value=slider.value">
+    <p id="subtitle">(Cifra de César)</p> 
+    
+    <section class="input-output">
+      <div>
+        <label for = "string-input" class="label">Escreva seu texto:</label>
+        <textarea id="string-input" class="textarea" placeholder="Escreva seu texto aqui"
+        autofocus="" spellcheck="false"></textarea>
+      </div >
+        
+      <div>
+        <label for="message" class="label">Resultado:</label>
+        <textarea id="message" class="textarea" readonly></textarea>
+        <button class="button" id="btn-copy">Copy</button> 
+      </div>
+      
+    </section> 
+    
+    <section class="offset-box" id= "offsetBox">
+      <label for="slider" id="sliderLabel" class="label">Escolha seu <i>offset</i>:</label><br>
+      
+      <input type="range" id="slider" min="0" max="49" class="slider" value="25" name="slider">
       <output for="slider" id="rot">13</output>
+    </section>
+    
+    <section class="submit">
+      <button type="button" class="button" id="submit-cipher">CRIPTOGRAFAR</button>
+      <button type="button" class= "button" id="submit-decipher">DESCRIPTOGRAFAR</button>
+      
+    </section>
+    
+    
+
+    <hr>
+
+    <div id="about">
+      <p>NEWSSAFE permite a comunicação de informações importantes com sua equipe de forma mais segura e ajuda a protejer seus trabalhos escritos, codificando e descodificando seus textos.</p>
+
+      <p>IMPORTANTE:Para descodificar uma mensagem deve-se usar o mesmo offset usado para criptografar-lo.</p>
+      <p>Imagem de background de <a href="https://pixabay.com/pt/users/mih83-464187/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1824828">M. H.</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1824828">Pixabay</a></p>
     </div>
     
-    <div class="submit">
-      <button type="button" class="button" id="submitToCipher">CrIPTOgRAFAr</button>
-      <button type="button" class= "button" id="submitDecipher">dESCRIPtOGRAFaR</button>
-    </div>
-      
-    <div class="inputOutput">
-      <label for="message">Veja sua mensagem:</label>
-      <textarea id="message" class="textarea" readonly></textarea>
-    </div>
-   
-   
+
   </form>
 
 
@@ -38,8 +57,3 @@
   <script src="index.js" type="module"></script>
 </body>
 </html>
-
-
-
-
-

@@ -5,33 +5,39 @@
 
 body{
     font-size: 100%;
-    background-image:url("https://www.toptal.com/designers/subtlepatterns/patterns/what-the-hex-dark.png");
-  /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(newspaper-502778_1920.jpg);
 }
 
 .myForm{
-    width: 60%;
+    width: 90%;
     display: block;
     margin: auto;
-    background-color: rgba(107, 107, 109, 0.7);
+    background-color: rgba(176, 182, 159, 0.95); /*164, 170, 145, 0.95*/
     border-radius: 10px;
+    box-shadow: 10px 10px 40px 8px rgba(0, 0, 0) /*none|h-offset v-offset blur spread color |inset|initial|inherit;*/
 }    
 
 .textarea{
-    width: 70%;
-    height: 150px;
+    width: 90%;
+    height: 250px;
     border-radius: 5px;
     resize: vertical;
     margin-top: 1rem;
     margin: 1rem;
+    font-size: 1rem;
+    display:block;
+    overflow: scroll;
+    box-shadow: 10px 5px 30px rgba(0, 0, 0);
+
 }
 
-.inputOutput{
-    width: 70%;
+.input-output{
+    width: 95%;
     text-align: center;
-    display: block;
+    display: flex;
     margin-right: auto;
     margin-left: auto;
+    justify-content: space-around;
 }
 
 .submit{
@@ -46,7 +52,7 @@ body{
 
 .button{
     border-radius: 5px;
-    background-color: #131c42; 
+    background-color: black; 
     border: none;
     color: white;
     font-weight: bold;
@@ -60,16 +66,13 @@ body{
 
 .button:hover{
     cursor: pointer;
-    background-color: black;
+    background-color: #131c42;
 }
 
-label{
+.label{
     font-size: 1.3rem;
     font-weight: bold;
-}
-
-#sliderLabel{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: block;
     width: 100%;
     text-align: center;
@@ -96,5 +99,32 @@ h1{
     font-size: 4rem;
     display: block;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 0px;    
 }
+
+#subtitle{
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px; 
+    font-size: 2rem;
+}
+
+
+div{
+    width: 100%;
+    
+}
+
+#message{
+    background-color: rgb(188, 192, 176);
+    overflow: auto;
+}
+
+#about{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
