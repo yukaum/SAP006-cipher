@@ -30,3 +30,4 @@ Alterações através de feedback:
 - O botão de limpar as janelas foi excluído por ser nada ou muito pouco útil. Considerou-se também um possível acionamento não intencional do usuário, apagando o conteúdo e causando transtornos.   
 - As janelas de input e output que estavam dispostas verticalmente foram colocadas lado a lado horizontalmente (pensando no usuário de desktop).
 - Alteração do fundo por um mais claro.
+- Inserção de botão para copiar o código, pensando em textos mais longos.
