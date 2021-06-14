@@ -58,7 +58,7 @@ const cipher = {
           }
           else {
             if (ascii >= 97 && ascii <= 122) {
-              decode += String.fromCharCode(((ascii - 90 - offset) % 26) + 90);
+              decode += String.fromCharCode(((ascii - 97 - offset) % 26) + 97);
             }
             else {
               decode += string[i];
