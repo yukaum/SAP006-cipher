@@ -1,0 +1,134 @@
+/* css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+
+body{
+    font-size: 100%;
+    background-image: url(newspaper-502778_1920.jpg);
+}
+
+.myForm{
+    width: 90%;
+    display: block;
+    margin: auto;
+    background-color: rgba(176, 182, 159, 0.95);
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px 8px rgba(0, 0, 0) /*none|h-offset v-offset blur spread color |inset|initial|inherit;*/
+}    
+
+.textarea{
+    width: 90%;
+    height: 250px;
+    border-radius: 5px;
+    resize: vertical;
+    margin-top: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    display:block;
+    overflow: scroll;
+    box-shadow: 10px 5px 30px rgba(0, 0, 0);
+}
+
+.input-output{
+    width: 95%;
+    text-align: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+}
+
+.submit{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 51%;
+    margin-right: auto;
+}
+
+.button{
+    border-radius: 5px;
+    background-color: black; 
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 35%;
+    padding: 0.8rem;
+    text-align: center;
+    margin: auto auto 1rem auto;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #131c42;
+}
+
+.label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+    width: 100%;  
+}
+
+.offset-box{
+    display:block;
+    width: 93%;
+    margin: auto;
+}
+
+.slider{
+    margin-right: auto;
+    width: 90%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.slider:hover{
+    opacity:1;
+}
+
+output{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h1{
+    font-family: 'IM Fell English SC', serif;
+    font-size: 4rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;    
+}
+
+#subtitle{
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px; 
+    font-size: 2rem;
+}
+
+
+div{
+    width: 100%;
+}
+
+#message{
+    background-color: rgb(188, 192, 176);
+    overflow: auto;
+}
+
+#about{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.copy{
+    position: absolute;
+}
