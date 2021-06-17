@@ -18,7 +18,6 @@ for (let i=-25; i<26; i++){
   }
 }
 
-offset.innerHTML = range[offset.innerHTML.value]
 slider.oninput = function (){
 offset.value = range[slider.value];
 }    
