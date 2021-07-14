@@ -2,7 +2,7 @@
 # NEWSSAFE(Caesar Cipher)
 
 Este produto é baseado em uma técnica simples de criptação conhecida como "Cifra de César",
-em que cada letra do texto original é substituída por outra que se encontra há um deslocamento (offset) mais a frente do mesmo alfabeto. Em resumo, ele codifica ou descodifica um texto.
+em que cada letra do texto original é substituída por outra que se encontra a um deslocamento (offset) mais a frente do mesmo alfabeto. Em resumo, ele codifica ou descodifica um texto.
 
 NEWSSAFE destinado principalmente à equipes jornalísticas e/ou jornalistas individuais   e meios de impresa.
 
